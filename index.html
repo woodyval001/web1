@@ -1,232 +1,93 @@
-<!--This is for specifying the HTML version -->
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="keywords" content="Web dev, Designers, Learning" />
-    <meta name="description" content="This is a test app" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
 
-    <title> HOME PAGE </title>
+    <!-- link:css -->
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <style>
-        /* body {
-            background-color: aqua;
-            } */
-    </style>
-
-    <script>
-        // alert("Welcome all");
-    </script>
-    <base  />
-
-    <noscript>Javasript is disabled on this browser </noscript>
-
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
-
 <body>
-    <!-- this div is done because of the positon:sticky we chose under .navHeader in sytle.css for the nav we are creating 
-     it would add an extra background/space to the top of your nav header
-    so you can comment it or leave it. it will just add more space to your background at the nav header-->
-    <!-- <div style="padding: 2rem; background-color: blanchedalmond;"></div> -->
+    
+<!-- header>a>img^nav>a*4  -->
+ <!-- short cut for the thing below -->
+ 
+<header class="navHeader">
+    <a href="#"><img src="#" alt="Logo"></a>
+    <nav class="flex gap-4">
+    <a href="#">home</a>
+    <a href="about.html">about</a>
+    <a href="services.html">contact</a>
+    <a href="contact.html">contact</a></nav>
+</header>
 
-    <header class="navHeader">
-        <a href="index.html">
-            <img src="./assets/img/jpeg.png" alt="LOGO" width="250">
+<header>
+    <!-- header>h1+h3 -->
+     <header>
+        <h1>Welcome...</h1>
+        <h3>We learn here.</h3>
+     </header>
+</header>
 
-        </a>
+<!-- main>section>div>div*3>div>img^div>p>lorem20 -->
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="about.html">About</a>
-
-            <div class="dropDownWrapper">
-                <a href="services.html">Services</a>
-
-                <div class="dropDown">
-                    <nav>
-                        <a href="#">Web dev</a>
-                        <a href="#">Call center</a>
-                        <a href="#">Procurement</a>
-                        <a href="#">ISP</a>
-                    </nav>
-                </div>
-            </div>
-
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <img src="./assets/img/burger.svg" alt="toggle" id="toggle" width="50">
-    </header>
-
-    <header class="heroHeader">
-        <h1>Welcome</h1>
-    </header>
-
-    <!-- <h2>Welcome</h2>
-        <h3>Welcome</h3>   
-        <h4>Welcome</h4>
-        <h5>Welcome</h5>
-        <h6>Welcome</h6>
-
-        <the main tag is used to specify the main area of the wev page> -->
-    <main>
-        <section class="abt">
+<main>
+    <section>
+        <div>
             <div>
-                <div><img src="./assets/img/FB_IMG_17290936182427907.jpg" alt="Representation"></div>
+                <div><img src="" alt=""></div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis neque reiciendis, aut optio
-                        voluptate earum quaerat inventore ab iusto ipsum enim nemo. Repudiandae praesentium sint ut eos
-                        alias amet beatae.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa doloremque itaque nisi necessitatibus officiis dolore quo odio mollitia quasi!</p>
                 </div>
             </div>
-
             <div>
-                <div><img src="./assets/img/FB_IMG_17404510106687722.jpg" alt="Representation"></div>
+                <div><img src="" alt=""></div>
+                <div>
+                    <p>Unde, animi ipsa. Error sint ipsa nihil hic, possimus, praesentium ad deserunt officia in ullam voluptatum minus incidunt quam nulla?</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="" alt=""></div>
+                <div>
+                    <p>Reprehenderit molestias dolores repellat dolorem soluta minima commodi laudantium iste doloremque distinctio! Quo eius ad animi ullam, aliquam error officiis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section>div>div*2>div>img^div>p>lorem10+p>lorem20 -->
+
+    <section>
+        <div>
+            <div>
+                <div><img src="" alt=""></div>
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis neque reiciendis, aut optio
-                        voluptate earum quaerat inventore ab iusto ipsum enim nemo. Repudiandae praesentium sint ut eos
-                        alias amet beatae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, saepe.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque itaque labore ab unde alias eveniet cum culpa sunt ad vitae.</p>
                     </p>
                 </div>
             </div>
-
             <div>
-                <div><img src="./assets/img/FB_IMG_17404510106687722.jpg" alt="Representation"></div>
+                <div><img src="" alt=""></div>
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis neque reiciendis, aut optio
-                        voluptate earum quaerat inventore ab iusto ipsum enim nemo. Repudiandae praesentium sint ut eos
-                        alias amet beatae.
+                        Quae exercitationem fugiat perferendis officiis laboriosam qui, tempore inventore suscipit?
+                        <p>Eius possimus id quasi. Minima ex harum soluta, velit voluptatem distinctio, eligendi magnam doloribus dicta atque eos! Illo, sunt perferendis?</p>
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- footer>p>{2026 all right reserved} -->
+     <footer>
+        <p>2026 all right reserved</p>
+     </footer>
 
-
-
-
-        <!-- more examples of it are done below with three images -->
-
-
-        <section class="sec">
-            <div>
-                <div>
-                    <div class="circle">50% Off</div>
-                    <div><img src="./assets/img/FB_IMG_17404510106687722.jpg" alt="Representation"></div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis neque reiciendis, aut optio
-                            voluptate earum quaerat inventore ab iusto ipsum enim nemo. Repudiandae praesentium sint ut
-                            eos alias amet beatae.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- second div -->
-                <div>
-                    <div class="circle">40% Off</div>
-                    <div><img src="./assets/img/FB_IMG_17404510106687722.jpg" alt="Representation"></div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis neque reiciendis, aut optio
-                            voluptate earum quaerat inventore ab iusto ipsum enim nemo. Repudiandae praesentium sint ut
-                            eos alias amet beatae.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- third div -->
-                <div>
-                    <div class="circle">80% Off</div>
-                    <div><img src="./assets/img/FB_IMG_17404510106687722.jpg" alt="Representation"></div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis neque reiciendis, aut optio
-                            voluptate earum quaerat inventore ab iusto ipsum enim nemo. Repudiandae praesentium sint ut
-                            eos alias amet beatae.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <p id="about">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta possimus minus accusantium quae quaerat
-            dolore saepe consequuntur
-            nisi ut quia vero labore, tenetur temporibus eius quisquam autem doloribus suscipit, numquam fugiat ducimus
-            cupiditate dolorem.
-            Perspiciatis quam vero nemo. Neque modi voluptates quaerat eligendi ab aliquid nisi maiores ipsum soluta,
-            possimus velit repudiandae
-            cumque voluptas atque! Possimus exercitationem libero debitis id ad eum labore, voluptas officiis nisi
-            doloremque accusamus corporis
-            rem quasi voluptatibus atque esse ut, aliquam veritatis tempora at! Ducimus maxime adipisci, minus vel
-            placeat asperiores? Accusamus
-            quae, odio recusandae ex est, fuga necessitatibus ullam quibusdam a dicta sequi nobis!
-        </p>
-
-        <p class="markedP">
-            <mark>
-                <strong>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, modi tempore debitis, fuga culpa
-                    doloremque numquam, laboriosam vero
-                    aut id nesciunt ipsum recusandae quidem qui? Quisquam, quas iste asperiores aut reprehenderit
-                    maiores illo animi dolor suscipit voluptate
-                    expedita necessitatibus! Ducimus fugiat at blanditiis! Ea, nesciunt, blanditiis sapiente accusantium
-                    minus omnis consectetur optio at alias
-                    sit porro non. Voluptatibus minima dolorem provident. Animi cumque, amet dignissimos facilis, magnam
-                    dolorem optio aliquam, eos quas suscipit
-                    blanditiis ipsum. Odit asperiores officiis voluptate, aperiam velit dolorem pariatur quisquam,
-                    commodi provident laudantium soluta accusamus aut
-                    expedita nemo eveniet a maiores tempora doloremque. Consequatur, eaque provident?
-                </strong>
-            </mark>
-        </p>
-
-        <section>
-            <div>
-                <p class="markedP">
-                    <span style="color: brown; font-size: 2rem">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nemo laboriosam necessitatibus
-                        quas animi aspernatur, vero deserunt atque batae asperiores delectus eum porro mollitia?
-                        Assumenda natus inventore necessitatibus modi impedit adipisci commodi voluptatibus
-                        consequuntur.
-                    </span>
-                    log2<sub>10</sub>=12
-                <P>
-                    log2<sup>10</sup>=12
-                </P>
-                <del>THE ANSWER IS NOT 2</del>
-
-                </p>
-                <hr />
-            </div>
-
-            <div class="list1">
-                <ol>
-                    <li>GARRI</li>
-                    <li>rice</li>
-                    <li>PAW PAW</li>
-                </ol>
-
-                <ul>
-                    <li>GARRI</li>
-                    <li>rice</li>
-                    <li>PAW PAW</li>
-                </ul>
-            </div>
-
-        </section>
-
-    </main>
+</main>
 
 </body>
-
-<footer>&copy;&nbsp;2026</footer>
-</head>
-
 </html>
