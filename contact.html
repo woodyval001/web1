@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>contact page</title>
+</head>
+
+ <header class="navHeader">
+        <a href="index.html">
+            <img src="./assets/img/jpeg.png" width="200" alt="logo" />
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+               <div class="dropDownWrapper">
+                <a href="services.html">Services</a>
+
+                <div class="dropDown">
+                    <nav>
+                        <a href="#">Web dev</a>
+                        <a href="#">Call center</a>
+                        <a href="#">Procurement</a>
+                        <a href="#">ISP</a>
+                    </nav>
+                </div>
+            </div>
+            <a href="gallery.html">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <header class="pageHero">
+      <h1>Contact Us</h1>
+      <h3>Use these mediums below to reach us</h3>
+    </header>
+
+<body>
+  <main>
+     <form action="form.html" method="get">
+          <label for="name">Names</label>
+        <input 
+        type="text" 
+        placeholder="Names" 
+        name="name" 
+        id="name" 
+        tabindex="1" 
+        autofocus
+        autocorrect="on"
+        required
+        />
+
+          <label for="password">Password</label>
+        <input
+        type="password"
+        id="password"
+        placeholder="********"
+        minlength="9"
+        maxlength="20"
+        required
+        />
+
+          <label for="email"> Email</label>
+        <input
+        type="email"
+        id="email"
+        placeholder="eg: example@gmail.com"
+        minlength="4"
+        maxlength="8"
+        required
+        autofocus
+        autocorrect="on"
+        tabindex="1"
+        />
+          <label for="date">Date</label>
+        <input
+        type="datetime-local"
+        id="date"
+        name="date"
+        required
+        autofocus
+        />
+          <label for="file">File</label>
+        <input
+        type="file"
+        id="file"
+        name="file"
+        accept="/pdf"
+        size="20mb"
+        />
+          <label for="num">Num</label>
+        <input 
+        type="number"
+        placeholder="Number"
+        id="number"
+        name="number"
+        />
+          <label for="search">Search</label>
+        <input 
+        type="search"
+        name="search"
+        id="search"
+        placeholder="Search here"
+        />
+
+        <label for="select"> Food Items</label>
+          <select name="select" id="select" required>
+            <option value=" disabled selected">--select--</option>
+            <option value="garri">Garri</option>
+            <option value="rice">Rice</option>
+            <option value="ÿam">Yam</option>
+            <option value="beans">Beans</option>
+           <option value="soup">Soup</option>
+          </select>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender"/>
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="female"/>
+            <label for="others">Others</label>
+            <input type="radio" name="gender" id="others" />
+        </fieldset>
+        <fieldset>
+             <legend>Options</legend>
+            <label for="garri">Garri</label>
+            <input type="checkbox" id="garri" name="garri"/>
+            <label for="beans">Beans</label>
+            <input type="checkbox" name="beans" id="beans"/>
+            <label for="rice">Rice</label>
+            <input type="checkbox" name="rice" id="rice" />
+        </fieldset>
+
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser" />
+
+                <label for="browser">Choose your browser from the list:</label>
+                <input list="browsers" name="browser" id="browser" />
+
+                <datalist id="browsers">
+                  <option value="Edge"></option>
+                  <option value="Firefox"></option>
+                  <option value="Chrome"></option>
+                  <option value="Opera"></option>
+                  <option value="Opera"></option>
+                  <option value="Safari"></option>            
+                </datalist>
+
+                <label for="message">Message</label>
+                <textarea name="msg" id="msg" placeholder="Write to us"></textarea>
+
+                <div id="about">
+                  <details open>
+                    <summary>How is the program</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt minus quas amet vel explicabo, molestiae fuga.
+                    </p>
+                  </details>
+
+                    <details>
+                    <summary>How is the program</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt minus quas amet vel explicabo, molestiae fuga.
+                    </p>
+                  </details>
+
+                    <details>
+                    <summary>How is the program</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt minus quas amet vel explicabo, molestiae fuga.
+                    </p>
+                  </details>
+                </div>
+    </form>
+  </main>  
+  <footer>&copy;&nbsp;2026</footer>
+</body>
+</html>

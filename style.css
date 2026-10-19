@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+    body{
+    background-color: rgb(1, 36, 36);
+    color:rgb(225, 232, 238);
+}
+
+
+/* header {
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    padding: 2rem;
+    background-color:rgb(224, 175, 14);
+} */
+     /*i have not seen the use yet, because it was scattering the text where i wrote about us, some thing you may know on the website */
+
+.navHeader {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    padding:  2rem 2rem;
+    background-color:blanchedalmond;
+    position: fixed;
+    /* the position is for the for nav pages, it is normally static, but when you use position like fixed, it will make the nav bottons move with you as you scrol the site:
+    now the widtch would expand the backgrond color to fit the page */
+/* another one is sticky, but you will ahve to add, top and z-index...., so we will comment fixed so we can put the zindex. */
+    /* position: sticky; */
+    top: 10;
+    width: 100%;
+    z-index: 5;
+    /* your nav header has to have a higher z index if not, the cirle which also has z index would clash with it */
+    border: 1px solid red;
+}
+
+/* this one is to edit the navigation buttons */
+
+
+.navHeader nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 0.55rem;
+    transition: all 2s;
+}
+
+
+
+/* this is an example of pseudocodes */
+.navHeader nav a:hover {
+    font-size: 1.5rem;
+    background-color: black;
+    color: #ffffff;
+    border-bottom: 1px solid;
+}
+
+.navHeader nav a:visited {
+    color: red;
+}
+
+.navHeader nav a:target{
+    color: aqua;
+}
+
+/* this is for the burger icon you want to */
+.navHeader > nav {
+    display: none;
+}
+
+.dropDownWrapper{
+    display: inline-block;
+    position: relative;
+}
+
+.dropDown{
+    display: none;
+    z-index: 4;
+    position: absolute;
+    background-color: #000;
+}
+
+.dropDown > nav > a {
+    display: block;
+}
+
+.dropDownWrapper:hover > .dropDown {
+    display: block;
+    
+}
+
+.grid{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 400px auto 200px auto;
+    /* grid-template-columns: auto  auto auto auto ; */
+    margin: 3rem;
+    /* column-gap: 3rem;
+    row-gap: 3rem; */
+    /* you use it and it will give another design */
+
+}
+
+.grid > div {
+    padding: 3rem;
+    border: 1px solid white;
+    color: white;
+}
+
+.grid10{
+    grid-column-start: span 2;
+    grid-row-start: 3;
+}
+.pageHero{
+    padding: 9rem 2rem 5rem 4rem;
+    color: #ffffff;
+/* this part is for the top of the about page, where there is an image and one side of it contains a faint color on it */
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 50%, rgba(11, 46, 25, 0.9) 
+    0%), url("../img/artists.jpg"), no-repeat 0;
+
+    background-size: 100%;
+        /* this is another desingn */
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(61, 199, 230)0); */
+/* rgb means red, green, blue, a means aplha and would determine how thick it would be */
+}
+
+.heroHeader {
+    height:100vh;
+    justify-content:center;
+    
+    display: flex   ;
+    justify-items: center;
+    align-items: center;
+    /* background: linear-gradient(270deg, rgba(223, 18, 18, 0), rgba(0, 0, 0, 1)); */ 
+    /* this is another design */
+    background: linear-gradient(270deg, rgba(174, 25, 25, 0.6) 50%, rgb(7, 37, 77, 0.6)0%),
+    url("../img/artists.jpg") no-repeat 0; 
+    color: white;
+    /* background-color: rgb(224, 175, 14);
+    color: black; */
+    background-size: 100%;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.heroHeader h1 {
+    /* aninationa: name duration timing-function delay iteration-count direction fill-mode are all properties of animation */
+    animation: animate 1s infinite alternate;
+    /* animation-delay: 6s; */
+}
+
+#about{
+    /* border: 1px solid yellowgreen; */
+    background-color: rgb(75, 59, 59);
+    box-shadow: 1px 0 9px 0 rgb(75, 59, 59);
+    border-radius: 9px;
+    /* width: 600px;
+     justify-items: center;
+    align-items: center;
+    height: 600px; */
+    padding: 2rem;
+    margin: 4rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+    word-spacing: 0.5rem;
+}
+
+#about details {
+    width: 100%;
+    max-width: 500px;
+    margin: 3rem auto;
+    
+}
+
+.abt{
+    margin: 5rem 4rem;
+    /* border: 1px solid; */
+}
+
+
+.abt > div {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex wrap would wrap the text so that it would fit into any device screen */
+    gap: 2rem;
+    justify-content: center;
+}
+
+.abt > div > div > img {
+    width: 100%;
+    max-width: 500px; 
+    /* means, this is the hightest you can go, regardless the device size, but if it is smaller that 500 refer back to 100%. this topic falls under siblings*/
+
+}
+
+.circle {
+    padding: 1rem;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 360px;
+    position: absolute;
+    /* absolute makes and object to be on the top of another */
+    z-index: 3;
+    top: -20px;
+    right: -20px;
+    /* you will have to refer down of this page, to the part which says .sec div div, that is where is designtion continues */
+}
+
+/* this is where the .circle continues */
+.sec > div > div {
+    position: relative;
+    border: 2px solid red;
+    box-shadow: 1px 2px 5px 1px grey;
+    border-radius: 9px 9px  0 0;
+}
+
+
+.sec > div > div > div{
+    overflow: hidden;
+     /* overflow: hidden; */
+    /* overflow hidden would make the cirel not to come out full, that is, it will power clip the cirle inside the rectangle, but we have commented it. */
+}
+
+
+.abt > div > div p {
+    /* which means there were two divs before the paragraph, because we are working on the paragraph now */
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.6rem;
+    word-spacing: 0.6rem;
+}
+
+/* this one is the the additional three images added */
+.sec {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid;
+}
+
+.sec > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* this one is for the first image under the group */
+.sec >div > div > div img {
+    transition: all 1s;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 9px 9px 0 0;
+     
+}
+
+.sec >div > div > div img:hover{
+    /* transform: skew(3deg); */
+    /* or you use this */
+    transform: scale(1.3);
+    cursor: crosshair;
+
+}
+
+/* .sec >div > div > div {
+    border-radius: 9px 9px;
+    overflow: hidden;
+    border: 2px solid red;
+
+} */
+
+
+
+.sec >div > div > div p {
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+}
+
+@keyframes animate {
+    0% {
+        transition: all 1s;
+        color: red;
+    }
+
+    25% {
+        transform: scale(1.3); 
+        color: green;
+    }
+    50% {
+        transform: skew(3deg);
+        color: aquamarine;
+    }
+
+    75% {
+        transform: scale(10.4rem);
+        color: chocolate;
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+    
+}
+
+/* this one is for transition */
+.list1{
+    display: flex;
+    gap: 3rem;
+    max-width: 500px;
+    justify-content: center;
+    width: 100%;
+    margin: 3rem auto;
+    /* the auto added is to centralize it */
+}
+
+.markedP{
+    margin: 3rem;
+    background-color: aliceblue;
+    padding: 2rem;
+    line-height: 1.5rem;
+    word-spacing: 0.5rem;
+    
+}
+
+.abtSec{
+    margin: 4rem auto;
+}
+
+.abtSec > div{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center ;
+    
+}
+
+.abtSec > div > div{
+    width: 100%;
+    max-width: 500px;
+}
+
+.abtSec > div > div > img {
+    width: 100%;
+
+}
+
+.audio1{
+    width: 100%;
+    max-width: 500px;
+    margin: 3rem auto;
+}
+.audio1 audio {
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    max-width: 700px;
+    margin: 3rem auto;
+
+}
+
+.table table,
+.table tr,
+.table td,
+.table th {
+    /* border: 1px solid; */ 
+    /* this one is to remove the vorder, un comment it to put border back */
+    padding: 0.4rem 0.8rem;
+    border-collapse: collapse ;
+}
+
+.table tr:nth-child(even){
+    background-color: rgb(223, 17, 17);
+
+}
+
+.table tr:hover {
+    background-color: rgb(19, 14, 9);
+}
+
+/* this form is for contact, where you put page hero, it is under pagehero */
+form{
+    width: 100%;
+    max-width: 500px;
+    
+    color: black;
+    margin: 3rem auto;
+        background: rgb(2, 53, 13);
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+/* this is also for contact */
+input,
+textarea, select{
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.9rem;  
+    border-radius: 1rem;  
+}
+
+fieldset{
+    margin-block: 0.6rem;
+    padding: 1rem;
+    background-color: rgb(53, 13, 13);
+    border: none;
+    border-radius: 1rem;
+    
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: fit-content;
+}
+
+legend{
+    text-align: center;
+    font-weight: 800;
+    background-color: rgb(228, 231, 9);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+label{
+    margin-block: 0.6rem;
+    display: inline-block;
+
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+    border-top-color: lightgreen;
+    border-top-width: 4px;
+    border-top-style: solid;
+
+}
+/* 
+the minwidth is a breakpoint where it would change on smaller screens */
+ @media only screen and (min-width: 678px){
+    body {
+        background: chocolate;
+    }
+
+    .navHeader > nav {
+    display: inline-block;
+}
+
+
+    #toggle{
+         display: none;
+         /* this toggle is because of the burger we downloaded and added under navigation button on index, its purpose is that it will appear on smaller phone screens */
+}
+ 
+
+
+}
+
+
+    /* this is the reason for the change of color on the site
+
+
+    
